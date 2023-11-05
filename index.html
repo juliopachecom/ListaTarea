@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqOQEWtiWyaKtBXSyjF2WDBb8dHTxSWttfKRqIX78&s" alt="Logo de la Universidad" style="position: absolute; top: 10px; left: 10px; width: 100px; height: 100px; z-index: 1;">
+
+      <div class="card-body">
+        
+        <h1>LISTA DE TAREAS</h1>
+        <div class="row">
+          <form id="task-form" class="col-12">
+            <div class="form-group row">
+              <div class="form">
+                <input type="text" class="form-control" id="task" placeholder="Nuevo...">
+                <label>Fecha de inicio
+                <input type="date" class="form-control" id="start-date" placeholder="Fecha de inicio">
+              </label>
+              <label>Fecha de fin
+                <input type="date" class="form-control" id="end-date" placeholder="Fecha de fin">
+              </label>
+                <input type="text" class="form-control" id="owner" placeholder="Propietario">
+              </div>
+              <div class="btn-plus">
+                <button type="submit" class="btn-add btn-block"><i class="fas fa-plus"></i> </button>
+              </div>
+
+             
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <ul id="task-list" class="list-group"></ul> 
+        <button onclick="deleteTasksDone()" class="btn" id="clear-btn">Eliminar tareas completadas</button>  
+      </div>   
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNS3vx" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
